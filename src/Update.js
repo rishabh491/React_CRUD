@@ -19,7 +19,7 @@ export const Update = () => {
     axios.get(`${process.env.REACT_APP_HOST}/posts/${id}`)
     .then(res=>setInfo(res.data))
     .then(console.log("OK"))
-  },[])
+  },[id])
 
 
   

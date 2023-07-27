@@ -12,7 +12,7 @@ export const Read = () => {
   useEffect(()=>{
     axios.get(`${process.env.REACT_APP_HOST}/posts/${id}`)
     .then(res=>setData(res.data))
-  },[])
+  },[id])
   
   return (
     <div class="card" >

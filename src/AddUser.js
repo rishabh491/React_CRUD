@@ -1,6 +1,7 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import {  useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 export const AddUser = () => {
 const[info,setInfo]=useState({
